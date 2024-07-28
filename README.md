@@ -1,6 +1,6 @@
 # fix-macos-samba-server-icon
 
-This Script is designed to run **on Ubuntu-Server 22.04/24.04 with Samba-Service installed and Samba-Shares configured**
+This bash script is designed to run **on Ubuntu-Server 22.04/24.04 with Samba-Service installed and Samba-Shares configured**
 
 ***
 <img width="114" align="left" alt="ubuntu-server-crt" src="https://github.com/user-attachments/assets/278f3d39-be6f-4d0f-aef3-01a1b235b210"> 
@@ -19,16 +19,17 @@ In some cases, your Ubuntu Server might not be displayed at all.
 This script will address this issue "not a bug" by installing Avahi (essentially Apple’s Bonjour) 
 allowing you to log in by hostname and browse shares in macOS Finder.
 Additionally, this script will create a new smb.service configuration file 
-in /etc/avahi/services/ in order to assign the correct server icon for macOS.
+in */etc/avahi/services/* directory in order to assign the correct server icon for macOS.
 ***
-**install guide:** run script as root + input username as $1 parameter
+**Install guide:** run script as root + input username as $1 parameter
     
-  - **example:**  *sudo ./fix-macos-smb-icon.sh test1*
+  - **example:**
+      - *sudo ./fix-macos-smb-icon.sh test1*
 
 ![samba-fix](https://github.com/user-attachments/assets/38995ad7-e94f-4c70-add2-5f7df9c7313f)
 
-**This script will install & configure the following packages/settings:**
-- update/upgrade packages
+**This script will:**
+- update + upgrade packages
 - install avahi service
 - create & configure smb.service file
 - autoremove leftover packages
