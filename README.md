@@ -16,7 +16,7 @@ In some cases, your Ubuntu Server might not be displayed at all.
 
 **AFTER:**
 
-This script will address this issue *not a bug* by installing Avahi (essentially Apple’s Bonjour) 
+This script will address this issue "not a bug" by installing Avahi (essentially Apple’s Bonjour) 
 allowing you to log in by hostname and browse shares in macOS Finder.
 Additionally, this script will create a new smb.service configuration file 
 in /etc/avahi/services/ in order to assign the correct server icon for macOS.
@@ -27,7 +27,7 @@ in /etc/avahi/services/ in order to assign the correct server icon for macOS.
 
 ![samba-fix](https://github.com/user-attachments/assets/38995ad7-e94f-4c70-add2-5f7df9c7313f)
 
-This script will install & configure the following packages/settings:
+**This script will install & configure the following packages/settings:**
 - update/upgrade packages
 - install avahi service
 - create & configure smb.service file
@@ -39,12 +39,10 @@ This script will install & configure the following packages/settings:
   
    - *highly recommended*
 
+**This appears to be the sole solution to this problem thus far...**
 
+ - For more in-depth information about this issue, please refer to the following articles:
 
-This appears to be the sole solution to this problem thus far.
-
-For more in-depth information about this issue, please refer to the following articles:
-
-  -*https://www.vathorstweb.nl/2022/04/25/samba-bonjour-with-avahi/*
+   - *https://www.vathorstweb.nl/2022/04/25/samba-bonjour-with-avahi/*
   
-  -*https://forums.macrumors.com/threads/wrong-connected-server-icon.2343790/*
+   - *https://forums.macrumors.com/threads/wrong-connected-server-icon.2343790/*
