@@ -21,10 +21,14 @@ allowing you to log in by hostname and browse shares in macOS Finder.
 Additionally, this script will create a new smb.service configuration file 
 in */etc/avahi/services/* directory in order to assign the correct server icon for macOS.
 ***
-**Install guide:** run script as root + input username as $1 parameter
+**Install guide:** 
+
+- run script as root
+- input username as $1 parameter
     
-  - **example:**
-> *sudo ./fix-macos-smb-icon.sh test1*
+**example:**
+    
+-  `sudo ./fix-macos-smb-icon.sh test1`
 
 ![samba-fix](https://github.com/user-attachments/assets/38995ad7-e94f-4c70-add2-5f7df9c7313f)
 
