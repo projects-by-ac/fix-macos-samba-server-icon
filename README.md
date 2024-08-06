@@ -1,7 +1,7 @@
 # Fix Samba Share Server Icon on macOS Finder
 
 ### Overview
-This bash script is designed to run **on Ubuntu-Server 22.04/24.04 with Samba-Service installed and Samba-Shares configured** and resolves the issue of Samba share connections appearing as old CRT monitor icons in macOS Finder. It provides a straightforward solution to ensure proper icon representation for Samba shares when accessed from macOS.
+This bash script is designed to run **on Ubuntu-Server 22.04/24.04 with Samba-Service installed and Samba-Shares configured** and resolves the issue of Samba share connections appearing as old CRT monitor icons in macOS Finder. It provides a straightforward solution to ensure proper icon representation for Samba share connections when accessed from macOS.
 
 
 ***
